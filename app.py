@@ -8,7 +8,7 @@ app = Flask(__name__, static_url_path='')
 def hello():
     html = "<h3>Hello, GoPomelo !</h3>"
     return html
-@app.route('/mdl/<path:path>')
+@app.route('./mdl/')
 def send_js(path):
     return send_from_directory('mdl', path)
 if __name__ == "__main__":
